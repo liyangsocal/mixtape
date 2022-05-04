@@ -1,0 +1,87 @@
+.accordion > input[name="collapse"] {
+  display: none;
+  
+}
+
+.accordion label,
+.accordion .content{
+   max-width: 940px;
+   margin: 0 auto;
+ }
+
+
+.accordion .content {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.5s;
+  font-size: 1.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 880px;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  max-height: 1100px;
+  height: auto;
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion label {
+  display: block;
+}
+
+/* For Desktop */
+/*@media only screen and (min-width: 620px){
+*/
+.accordion > input[name="collapse"]:checked ~ .content {
+  max-height: 1100px;
+  height: auto;
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  border-top: 0;
+  transition: 0.5s;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 2em;
+}
+
+.accordion label {
+  color: #000;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 10px;
+  background: #ffffff;
+  user-select: none;
+  
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #000;
+  color: #fff;
+}
+
+.accordion .handle label:before {
+  content: "▼";
+  display: inline-block;
+  float: right;
+  font-size: 1em;
+  line-height: 1.25em;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+  content: "▲";
+  font-size: 1em;
+  line-height: 1.25em;
+  vertical-align: middle;
+}
