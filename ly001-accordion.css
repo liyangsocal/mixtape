@@ -76,7 +76,7 @@
   font-size: 1em;
   line-height: 1.25em;
   vertical-align: middle;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .accordion > input[name="collapse"]:checked ~ .handle label:before {

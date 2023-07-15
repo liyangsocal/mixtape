@@ -1,6 +1,11 @@
+/* I believe this just applies to LY001 because it does not have a left arrow */
+
 .column {
   float: left;
   width: 50%;
+  line-height: 1em;
+  text-decoration-line: none!important;
+  color: black;
 }
 
 /* Clear floats after the columns */
@@ -8,4 +13,36 @@
   content: "";
   display: table;
   clear: both;
+}
+
+a.arrows {
+	color: black!important;
+	text-decoration-line: none!important;
+}
+
+/* This latter part can apply to the rest of the pages */
+
+.column-left {
+  float: left;
+  text-align: right;
+  line-height: 1em;
+  width: 49%;
+  padding: .5%;
+  text-decoration-line: none!important;
+  color: black;
+}
+
+.column-right {
+  float: left;
+  text-align: left;
+  line-height: 1em;
+  width: 49%;
+  padding: .5%;
+  text-decoration-line: none!important;
+  color: black;
+}
+
+.arrows {
+	text-align: center;
+	text-decoration: none;
 }
